@@ -43,7 +43,7 @@ class Game {
   check_2() {
     if (this.boomerang.position >= this.enemy.position) {
       this.enemy.die();
-      this.boomerang.moveLeft
+      this.boomerang.moveLeft()
     }
   }
 
@@ -56,7 +56,7 @@ class Game {
       this.check_2()
       this.check();
       this.regenerateTrack();
-      
+      runInteractiveConsole(this.hero)
       this.view.render(this.track);
 
       setInterval(() => {
