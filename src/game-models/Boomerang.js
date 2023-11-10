@@ -10,6 +10,8 @@ class Boomerang {
 
   fly() {
     this.moveRight();
+    //  if (this.boomerang.position === this.enemy.position) {
+    //   this.enemy.die();
     this.moveLeft();
   }
 
